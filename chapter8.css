@@ -12,7 +12,6 @@
 
 .list {
 	color: #696969;
-	margin-bottom: 50px;
 }
 
 p {
@@ -21,4 +20,34 @@ p {
 
 p:nth-child(odd) {
 	background-color: #dcdcdc;
+}
+
+.color-box {
+	width: 960px;
+	margin: 0 auto;
+}
+.box {
+	float: left;
+	width: 30%;
+	height: 200px;
+	background-color: gold;
+}
+
+.box:nth-child(-n+6) {
+	margin-bottom: 40px;
+}
+.box:not(:nth-child(3n)) {
+	margin-right: 5%;
+}
+.box:nth-child(n+7) {
+	margin-bottom: 50px;
+}
+.box:nth-child(1) {
+	background-color: #ff8c00;
+}
+.box:nth-child(5) {
+	background-color: #ff8c00
+}
+.box:nth-child(9) {
+	background-color: #ff8c00
 }
